@@ -3,13 +3,13 @@ import React, { useEffect, useState } from "react";
 import Footer from "../components/Footer";
 import Note from "../components/Note";
 import CreateArea from "../components/CreateArea";
-import { storybase_backend } from "../../../declarations/storybase_backend";
+import { notemain_backend } from "../../../declarations/notemain_backend";
 
 function Home() {
   const [newNote, setNewNote] = useState([]);
 
   const handleAdd = (title, body) => {
-    storybase_backend.createNote(title, body);
+    notemain_backend.createNote(title, body);
     setNewNote([...newNote, { title: title, content: body }]);
   };
 
@@ -18,7 +18,7 @@ function Home() {
   }, []);
 
   const fetchData = async () => {
-    const notesArray = await storybase_backend.readNotes();
+    const notesArray = await notemain_backend.readNotes();
     setNewNote(notesArray);
   };
 

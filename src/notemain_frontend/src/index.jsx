@@ -1,4 +1,4 @@
-import { storybase_backend } from "../../declarations/storybase_backend";
+import { notemain_backend } from "../../declarations/notemain_backend";
 //import ReactDOM from 'react-dom/client';
 //import { BrowserRouter } from 'react-router-dom';
 import * as React from "react";

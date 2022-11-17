@@ -37,7 +37,7 @@ const canisterEnvVariables = initCanisterEnv();
 
 const isDevelopment = process.env.NODE_ENV !== "production";
 
-const frontendDirectory = "storybase_frontend";
+const frontendDirectory = "notemain_frontend";
 
 const frontend_entry = path.join("src", frontendDirectory, "src", "index.html");
 

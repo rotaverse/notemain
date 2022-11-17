@@ -1,7 +1,7 @@
 import List "mo:base/List";
 import Debug "mo:base/Debug";
 
-actor storybase {
+actor notemain {
 
 // Create a new data type that represents the kind of data for the notes
   public type Note = {

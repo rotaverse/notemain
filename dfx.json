@@ -1,19 +1,19 @@
 {
   "canisters": {
-    "storybase_backend": {
-      "main": "src/storybase_backend/main.mo",
+    "notemain_backend": {
+      "main": "src/notemain_backend/main.mo",
       "type": "motoko"
     },
-    "storybase_frontend": {
+    "notemain_frontend": {
       "dependencies": [
-        "storybase_backend"
+        "notemain_backend"
       ],
       "frontend": {
-        "entrypoint": "src/storybase_frontend/src/index.html"
+        "entrypoint": "src/notemain_frontend/src/index.html"
       },
       "source": [
-        "src/storybase_frontend/assets",
-        "dist/storybase_frontend/"
+        "src/notemain_frontend/assets",
+        "dist/notemain_frontend/"
       ],
       "type": "assets"
     }
