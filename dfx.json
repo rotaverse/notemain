@@ -4,16 +4,16 @@
       "main": "src/notemain_backend/main.mo",
       "type": "motoko"
     },
-    "notemain_frontend": {
+    "frontend": {
       "dependencies": [
         "notemain_backend"
       ],
       "frontend": {
-        "entrypoint": "src/notemain_frontend/src/index.html"
+        "entrypoint": "src/frontend/src/index.html"
       },
       "source": [
-        "src/notemain_frontend/assets",
-        "dist/notemain_frontend/"
+        "src/frontend/assets",
+        "dist/frontend/"
       ],
       "type": "assets"
     }
